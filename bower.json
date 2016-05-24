@@ -1,0 +1,19 @@
+{
+  "name": "my-app",
+  "version": "0.0.0",
+  "private": true,
+  "description": "my-app",
+  "authors": [
+    "yuchao03"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "angular": "1.x",
+    "angular-route": "1.x",
+    "mobile-angular-ui": "1.2.x",
+    "jqplot-bower": "1.0.8",
+    "font-awesome": "4.2",
+    "bootstrap": "3.x",
+    "angular-chart.js": "^0.10.2"
+  }
+}
