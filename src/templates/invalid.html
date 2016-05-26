@@ -1,5 +1,5 @@
 <div class="scrollable">
-    <div class="scrollable-content">
+    <div class="scrollable-content" style="background: #ffffff">
 
         <h2>验证实例</h2>
 <h3><a href="https://docs.angularjs.org/api/ng/input/input%5Bcheckbox%5D">官文 </a> </h3>
@@ -46,6 +46,40 @@
                     <span ng-show="myForm.date.$error.required">日期必填</span>
                     <span ng-show="myForm.date.$error.date">不是有效的日期类型!</span>
                 </div>
+                ng date类型 绑定数据类型需要：Date，字符串 "2016-06-09" 转为Date; 时间戳毫秒 转为Date <br/>
+                显示格式"":
+                <p >
+                    <code>
+                        <span>{{</span>  1304375948024 | date <span>}}</span>： {{ 1304375948024 | date }}
+                    </code>
+                    <br/><br/>
+                    <code>
+                         <span>{{</span>  1304375948024 | date:"MM/dd/yyyy @ h:mma" <span>}}</span>： {{ 1304375948024 | date:"MM/dd/yyyy @ h:mma" }}
+                    </code>
+                    <br/><br/>
+                    <code>
+                        <span>{{</span>  "2015-05-05" | date:"MM/dd/yyyy" <span>}}</span>： {{ "2015-05-05" | date:"yyyy/MM/dd" }}
+                    </code>
+                    <br/><br/>
+
+                    <code>
+                        <span>{{</span>  '2015-06-07' | date:'yyyy' <span>}}</span>： {{ '2015-06-07' | date:'yyyy' }}
+                    </code>
+                    <br/><br/>
+
+
+
+更多时间过滤器
+                    http://each.sinaapp.com/angular/apps/app-date-format.html
+
+自定义过滤器
+
+                    http://jingyan.baidu.com/article/3052f5a1fa407197f31f86f9.html
+
+不错的帮助文档
+                    http://each.sinaapp.com/angular/index.html
+
+                </p>
             </div>
 
             url

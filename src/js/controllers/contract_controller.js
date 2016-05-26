@@ -3,7 +3,7 @@ var test1= 'test1';
 
 myApp.controller('contractController', function($scope){
 
-   // alert(jsonsql);
+
     var scrollItems = [];
 
     for (var i=1; i<=100; i++) {
@@ -11,6 +11,11 @@ myApp.controller('contractController', function($scope){
     }
 
     $scope.scrollItems = scrollItems;
+
+
+    $scope.colorChange =function(color){
+       console.log(color);
+    }
 });
 
 

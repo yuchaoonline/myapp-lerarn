@@ -1,0 +1,50 @@
+<div class="scrollable">
+    <div class="scrollable-content" style="background: #ffffff">
+<textarea style="width: 100%">
+    <h3>ng-init初始化变量</h3>
+<div ng-init="name='aurora';age='18'">
+    <p ng-bind="name+','+age"></p>
+    <p>{{name+','+age}}</p>
+    <p ng-bind="name"></p>
+    <p ng-bind="age"></p>
+</div>
+<h3>ng-init初始化对象</h3>
+<div ng-init="hero={name:'aurora',role:'sup',line:'不管刮风还是下雨，太阳照常升起'}">
+    <p ng-bind="hero.name+','+hero.role+','+hero.line"></p>
+    <p ng-bind="hero.name"></p>
+    <p ng-bind="hero.role"></p>
+    <p ng-bind="hero.line"></p>
+</div>
+<h3>ng-init初始化数组</h3>
+<div ng-init="heros=['曙光女神','堕落天使','魂锁典狱长']">
+    <p ng-bind="heros[0]+','+heros[1]+','+heros[2]"></p>
+    <p ng-bind="heros[0]"></p>
+    <p ng-bind="heros[1]"></p>
+    <p ng-bind="heros[2]"></p>
+</div>
+
+</textarea>
+
+<h3>ng-init初始化变量</h3>
+<div ng-init="name='aurora';age='18'">
+    <p ng-bind="name+','+age"></p>
+    <p>{{name+','+age}}</p>
+    <p ng-bind="name"></p>
+    <p ng-bind="age"></p>
+</div>
+<h3>ng-init初始化对象</h3>
+<div ng-init="hero={name:'aurora',role:'sup',line:'不管刮风还是下雨，太阳照常升起'}">
+    <p ng-bind="hero.name+','+hero.role+','+hero.line"></p>
+    <p ng-bind="hero.name"></p>
+    <p ng-bind="hero.role"></p>
+    <p ng-bind="hero.line"> </p>
+</div>
+<h3>ng-init初始化数组</h3>
+<div ng-init="heros=['曙光女神','堕落天使','魂锁典狱长']">
+    <p ng-bind="heros[0]+','+heros[1]+','+heros[2]"></p>
+    <p ng-bind="heros[0]"></p>
+    <p ng-bind="heros[1]"></p>
+    <p ng-bind="heros[2]"></p>
+</div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+<textarea>
+<h3>ng-repeat遍历无重复集合</h3>
+<div ng-init="names=[1,2,3]">
+    <ul>
+        <li ng-repeat="x in names">
+            {{x}}
+        </li>
+    </ul>
+</div>
+<h3>ng-repeat遍历重复集合</h3>
+<div ng-init="number=[1,2,2,3]">
+    <ul>
+        <li ng-repeat="x in number track by $index">
+            {{x}}
+        </li>
+    </ul>
+</div>
+<h3>ng-repeat遍历对象</h3>
+<div ng-controller="contr-3">
+    <ul>
+        <li ng-repeat="(key,value) in object track by $index">
+            {{key+":"+value}}
+        </li>
+    </ul>
+</div>
+<h3>ng-repeat遍历对象(按原有顺序)</h3>
+<div ng-controller="contr-4">
+    <ul ng-repeat="obj in objs ">
+        <li ng-repeat="(key,value) in obj ">
+            {{key+":"+value}}
+        </li>
+    </ul>
+</div>
+<h3>ng-repeat遍历对象(属性详解)</h3>
+<table ng-controller="contr-5">
+    <tr ng-repeat="(key, value) in objs ">
+        <td>学号:
+            <span ng-bind="$index"></span>
+        </td>
+        <td>
+            <span ng-bind="key"></span>:
+            <span ng-bind="value"></span>
+        </td>
+        <td>是否为奇数？
+            <span ng-bind="$odd"></span>
+        </td>
+        <td>是否为偶数？
+            <span ng-bind="$even"></span>
+        </td>
+        <td>排行是老大？
+            <span ng-bind="$first"></span>
+        </td>
+        <td>排行最小？
+            <span ng-bind="$last"></span>
+        </td>
+        <td>排行中间？
+            <span ng-bind="$middle"></span>
+        </td>
+    </tr>
+</table>
+<h3>ng-repeat start/end</h3>
+<div ng-controller="contr-6">
+    <div ng-repeat-start="(key,value) in objs">
+        <p>学号:
+            <span ng-bind="$index"></span>
+        </p>
+        <p>
+            <span ng-bind="key"></span>:
+            <span ng-bind="value"></span>
+        </p>
+    </div>
+    <div ng-repeat-end></div>
+</div>
+    </textarea>

@@ -24,6 +24,8 @@ angular.module('MyApp', [
         $routeProvider.when('/contract', {templateUrl:'contract.html',  reloadOnSearch: false});
         $routeProvider.when('/invalid', {templateUrl:'invalid.html',  reloadOnSearch: false});
         $routeProvider.when('/ng-switch', {templateUrl:'ng-switch.html',  reloadOnSearch: false});
+        $routeProvider.when('/filter', {templateUrl:'filter.html',  reloadOnSearch: false});
+        $routeProvider.when('/ng-init', {templateUrl:'ng-init.html',  reloadOnSearch: false});
 
       //解决ng post数据格式
       $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded';

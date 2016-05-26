@@ -1,7 +1,22 @@
 
 
 <div class="scrollable" ng-controller ="contractController">
-    <div class="scrollable-content">
+    <div class="scrollable-content" style="background: #ffffff" ng_init="name='吗是谁？';color='#000000'">
+
+        <div class="ng-cloak">这是自动初始化的Angular（已解决闪烁问题class="ng-cloak"）：{{1+2+3}}</div>
+
+<div>这么多中方式也是醉了, 尽量保持一种  </div>
+        <input type="color" value="#000000" ng-model="color" ng-change > {{color}}
+        <input ng-model="name"/><hr/>
+        ngBind="name" 这个用不了~~ <span ngBind="name"></span><br/>
+        ng:bind="name"<span ng:bind="name"></span><br/>
+        ng_bind="name"<span ng_bind="name"></span><br/>
+        ng-bind="name"<span ng-bind="name"></span><br/>
+        data-ng-bind="name"<span data-ng-bind="name"></span><br/>
+        x-ng-bind="name"<span x-ng-bind="name"></span><br/>
 </div>
+
+
+
     </div>
 
