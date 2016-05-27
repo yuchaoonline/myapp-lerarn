@@ -1,7 +1,9 @@
 
 
 <div class="scrollable" ng-controller ="contractController">
-    <div class="scrollable-content" style="background: #ffffff" ng_init="name='吗是谁？';color='#000000'">
+    {{welcome}}
+
+    <div ng-init="welcome = 23333" class="scrollable-content" style="background: #ffffff" ng_init="name='吗是谁？';color='#000000'">
 
         <div class="ng-cloak">这是自动初始化的Angular（已解决闪烁问题class="ng-cloak"）：{{1+2+3}}</div>
 
